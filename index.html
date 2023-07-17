@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Game</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation + timer -->
+    <nav class="nav navbar-default">
+      <div class="container-fluid">
+        <a
+          href="#"
+          style="
+            font-size: 40px;
+            font-family: Copperplate;
+            color: #6495ed;
+            text-align: center;
+          "
+          class="navbar-brand"
+          >Memory Game</a
+        >
+        <p
+          id="time"
+          style="font-size: 35px; font-family: Copperplate; color: #6495ed;"
+          class="navbar-right navbar-brand"
+        >
+          00:00:00
+        </p>
+      </div>
+    </nav>
+
+    <!--gameboard size-->
+    <center>
+      <div id="inst">
+        <h1>Welcome !</h1>
+        Instructions For The Memory Game<br /><br />
+        <li>Make pairs of similiar blocks by flipping them.</li>
+        <li>To flip a block you can click on it.</li>
+        <li>
+          If two blocks you clicked are not the same, they will be flipped back.
+        </li>
+        <li>
+          Top 6 players across the board (no matter your grid size) will be
+          ranked below!
+        </li>
+        <br />
+        <p style="font-size: 16px;">
+          Enter your name and click one of the following mode to start the game!
+        </p>
+      </div>
+      <br />
+      <div id="start" class="col-sm-2 col-sm-offset-5 text-center">
+        <div id="nameDiv">
+          <p style="font-size: 25px; font-family: Didot; color: #ffff;"></p>
+          <button id="change" class="btn btn-info form-control">
+            Change user
+          </button>
+        </div>
+        <div id="enterName">
+          <p style="font-family: Didot; font-size: 25px; color: #ffff;">
+            Enter your name:
+          </p>
+          <input name="name" type="text" class="form-control" />
+        </div>
+        <br />
+      </div>
+      <button id="small" class="small">3 x 6</button>
+      <button id="medium" class="medium">4 x 6</button>
+      <button id="large" class="large">6 x 6</button>
+    </center>
+    <br /><br />
+
+    <!-- Memory GAME -->
+    <div class="container"></div>
+    <br /><br />
+
+    <br /><br />
+    <div id="restart">
+      <p style="font-size: 25px; font-family: Didot;"></p>
+      <br />
+      <br /><br />
+      <button id="restartBtn" class="btn btn-info form-control">
+        Restart Game
+      </button>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="col-sm-8 col-sm-offset-2">
+      <p
+        style="
+          font-size: 40px;
+          font-family: Copperplate;
+          color: #6495ed;
+          text-align: center;
+        "
+      >
+        Scoreboard
+      </p>
+      <div id="scoreboard"></div>
+    </div>
+    <script src="game.js" charset="utf-8"></script>
+  </body>
+</html>

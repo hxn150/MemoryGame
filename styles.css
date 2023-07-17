@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Biryani", sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#faebd7),
+    to(#ffdab9)
+  );
+  background-image: -o-linear-gradient(top, #faebd7 0%, #ffdab9 100%);
+  background: linear-gradient(
+    325deg,
+    #03001e 0%,
+    #7303c0 30%,
+    #ec38bc 70%,
+    #fdeff9 100%
+  );
+}
+
+#ol {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 200, 0.1);
+  color: white;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  margin-bottom: 20px auto;
+  box-shadow: 0 0 0px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  float: left;
+  box-shadow: 0 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.7s;
+}
+
+.small,
+.medium,
+.large {
+  background: #282a3a;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.front {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #fff0f5;
+  backface-visibility: hidden;
+  transition: all 0.7s;
+}
+
+.back {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+  color: #faebd7;
+  text-shadow: 1px 1px 1px black;
+  backface-visibility: hidden;
+  transition: all 0.7s;
+  transform: perspective(900px) rotateY(180deg);
+}
+
+#restart {
+  text-align: center;
+  margin-top: 5vh;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#inst {
+  width: 85vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-top: 2vh;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  border: 0.2px solid #ffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#nameDiv {
+  display: none;
+}
+
+#scoreboard {
+  padding: 15px;
+  border-top: 10px;
+  border-bottom: 10px;
+  border: 1px solid #eee;
+  height: 10vh;
+  box-shadow: 0 0 8px;
+  font-family: "Copperplate", sans-serif;
+  background-color: rgba(0, 0, 200, 0.1);
+  color: white;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.scores {
+  margin: 8px;
+  border-bottom: 8px;
+  display: inline-block;
+  font-family: "Copperplate", sans-serif;
+  color: white;
+}
