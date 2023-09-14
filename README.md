@@ -8,5 +8,6 @@ This is a demo of what my memory game entails! Some core functionalities are:
 
 
 Live Demo: 
-https://github.com/hxn150/MemoryGame/assets/101972543/41ae8309-d0a3-49f1-a4a3-1dbbf157475f
+https://github.com/hxn150/MemoryGame/assets/101972543/9c29bfc6-050f-4fb2-b0e0-97c91a7a5edc
+
 
